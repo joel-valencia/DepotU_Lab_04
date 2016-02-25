@@ -1,5 +1,8 @@
 #my-button {
     display: block;
+    width: 100px;
+    height: 100px;
+    font-size: 15px;
 }
 
 .square {
