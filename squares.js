@@ -35,13 +35,21 @@ function createSquare() {
 
         if(this.id % 2 == 0) {
             var nextSquare = this.nextSibling;
+            
             if (nextSquare) {
                 nextSquare.parentNode.removeChild(nextSquare);
-            };
             } else {
+                alert("Next element does not exist");
+            };
+            
+            } else {
+                
             var prevSquare = this.previousSibling;
             if (prevSquare) {
                 prevSquare.parentNode.removeChild(prevSquare);
+            } else {
+                alert('Previous element does not exist');
+                
             };
         }
     };
