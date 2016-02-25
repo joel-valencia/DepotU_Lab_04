@@ -34,15 +34,15 @@ function createSquare() {
     square.ondblclick = function() {
 
         if(this.id % 2 == 0) {
-            var nextSquare = this.nextSibling;
             
+            var nextSquare = this.nextSibling;
             if (nextSquare) {
                 nextSquare.parentNode.removeChild(nextSquare);
             } else {
                 alert("Next element does not exist");
             };
             
-            } else {
+        } else {
                 
             var prevSquare = this.previousSibling;
             if (prevSquare) {
